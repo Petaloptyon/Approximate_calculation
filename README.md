@@ -1,14 +1,12 @@
-# Домашнее задание №6
-## Сборка многомодульных программ. Вычисление корней уравнений и определенных интегралов
+## Assembly of multi-module programs. Calculation of the roots of equations and definite integrals
 
-### Постановка задачи
-С заданной точностью ε вычислить площадь плоской фигуры, ограниченной тремя кривыми.
+### Setting the task
+With a given accuracy, calculate the area of a flat shape bounded by three curves.
 
-### Вариант задания  5 / 4 / 3
-1. **Уравнения кривых:**
-   1. $$f_1(x) = 0.35x^2 - 0.95x + 2.7$$
-   2. $$f_2(x) = 3x + 1$$
+1. **Equations of curves:**
+1. $$f_1(x) = 0.35x^2 - 0.95x + 2.7$$
+2. $$f_2(x) = 3x + 1$$
    3. $$f_3(x) = \frac{1}{x + 2}$$
 
-3. **Метод приближенного решения уравнений:** комбинированный метод.
-4. **Квадратурные формулы:** метод симпсона. 
+3. **Method of approximate solution of equations:** The combined method.
+4. **Quadrature formulas:** The Simpson method.
