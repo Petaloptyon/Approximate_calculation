@@ -114,18 +114,18 @@ _d2f3:
 ;    and  esp, 0xfffffff0
 ;    sub  esp, 16
 ;    
-;    ; Загружаем аргумент 2.0 (double)
+;    ; load argument 2.0 (double)
 ;    fld     qword [const_for_func]; ST0 = 2.0
-;    fstp    qword [esp]          ; Сохраняем в стеке (64 бита)
+;    fstp    qword [esp]          ; save in stack (64 bits)
 ;    
-;    ; Вызываем _f2(2.0)
-;    call _d2f3                    ; Результат в ST0
+;    ; call _f2(2.0)
+;    call _d2f3                    ; result in ST0
 ;    
-;    ; Печатаем результат через printf
-;    fstp    qword [esp]          ; Сохраняем double в стек
-;    push    fmt_float            ; Форматная строка
+;    ; write through printf
+;    fstp    qword [esp]          ; save double in stack
+;    push    fmt_float            ; format string
 ;    call    printf
-;    add     esp, 12              ; Чистим стек
+;    add     esp, 12              ; stack clearing
 ;    leave
 ;    ret
 
@@ -146,4 +146,5 @@ section .data
     const_3      dq 3.0
 
 ;section .rodata
-;    fmt_float db "%.6f", 10, 0   ; Формат вывода (6 знаков после запятой)
+
+;    fmt_float db "%.6f", 10, 0   ; output format
