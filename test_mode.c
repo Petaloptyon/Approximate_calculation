@@ -1,7 +1,6 @@
 #include "functions.h"
-
 // ----------------------------------------------------------------------------------
-//                              Тестовые функции
+//                              Test functions
 // ----------------------------------------------------------------------------------
 double idx(double x)  {return 4;}
 double test_f1(double x)  {return x*x + 5*x + 6;}
@@ -13,9 +12,8 @@ double test_df3(double x) {return 3*x*x;}
 double test_f4(double x)  {return 0;}
 double test_df4(double x) {return 0;}
 func funcs[] = {idx, test_f1, test_f2, test_f3, test_f4, test_df1, test_df2, test_df3, test_df4};
-
 // ----------------------------------------------------------------------------------
-//                     Основная функция тестового режима
+//                     Main function of test mode
 // ----------------------------------------------------------------------------------
 int main(void) {
     printf("Test1\n");
